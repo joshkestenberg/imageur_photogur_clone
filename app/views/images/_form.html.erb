@@ -15,3 +15,9 @@
     <%= f.submit "Shit" %>
   </p>
 <%end%>
+
+<% if @image.errors.any? %>
+  <% @image.errors.full_messages.each do |msg| %>
+    <p><%= "Yarrrrr walk the plank and try again! #{msg}!" %></p>
+  <% end %>
+<% end %>
