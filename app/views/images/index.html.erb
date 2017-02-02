@@ -1,0 +1,5 @@
+<%= link_to "New Image", new_image_path %><br><br>
+
+<% @images.each do |image| %>
+  <%= render 'image', image: image %>
+<%end%>
